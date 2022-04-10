@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TVOZ - ...an exciting experience.</title>
+    <link href="./css/materialize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./fonts/material-icons.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link href="./css/TVOZ.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo left">TVOZ</a>
+            <!-- <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">Javascript</a></li>
+                <li><a href="mobile.html">Mobile</a></li>
+            </ul> -->
+        </div>
+    </nav>
+    <div class="row welcome">
+        <h1>Best Place for Live Football &amp; Movies</h1>
+        <p>
+            Watch all matches involving the top teams of the top 5 European leagues (Arsenal, Chelsea, Man Utd, Man City, Liverpool, Tottenham, Real Madrid, Barcelona, Inter Milan, Ac Milan, Juventus, PSG, Bayern Munich, etc.) live on your mobile phone WITHOUT DATA.
+        </p>
+        <p>
+            Watch thousands of movies upload by top users every week WITHOUT DATA. 
+        </p>
+        <p>
+            Miss any live match? Watch a recording of it. Watch recorded match previews and review, top Youtube videos of Sports, Comedy, Lifestyle, Technology, DIY, etc.
+        </p>
+        <p>
+            All these for <b>N1000 per month</b>.
+        </p>
+        <small>..truly an exciting experience.</small>
+    </div>
+    <div class="mobileContainer">
+        
+        <div class="row">
+            <h1><b>LIVE PROGRAMS</b> <small>(APRIL)</small></h1>
+        </div>
+        <!-- Swiper -->
+        <div class="row swiper-container">
+            <div class="swiper-wrapper">
+                {{#tv}}
+                <div class="swiper-slide">
+                    <img src="http://localhost:3000/img/{{thumbImg}}" class=""/>
+                    <p class="truncate">{{title}}</p>
+                    <small>{{nuDate}}</small>
+                </div>
+                {{/tv}}
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="row" id="movies">
+            <h1><b>MOVIES</b> <small>(Top Movies)</small></h1>
+            {{#vod}}
+            <div class="col s6 movie">
+                <img src="http://localhost:3000/img/{{imgPortrait}}" class=""/>
+                <p class="truncate">{{title}}</p>
+            </div>
+            {{/vod}}
+            <!-- <div class="col s6 movie">
+                <img src="./img/LionheartPortrait.jpg" class=""/>
+                <p class="truncate">Lionheart</p>
+            </div>
+            <div class="col s6 movie">
+                <img src="./img/RobinHoodPortrait.jpg" class=""/>
+                <p class="truncate">Robihood</p>
+            </div>
+            <div class="col s6 movie">
+                <img src="./img/moana.jpg" class=""/>
+                <p class="truncate">Moana</p>
+            </div>
+            <div class="col s6 movie">
+                <img src="./img/LionheartPortrait.jpg" class=""/>
+                <p class="truncate">Lionheart</p>
+            </div>
+            <div class="col s6 movie">
+                <img src="./img/darkPhoenixPort.jpg" class=""/>
+                <p class="truncate">Dark Phoenix</p>
+            </div> -->
+            
+            <p>
+                TVOZ has over <b>1000 movies</b> uploaded by its users and every week an average of 25 new movies are uploaded.
+            </p>
+        </div>
+
+        <div class="row" id="howItWorks">
+            <h1><b>HOW TVOZ WORKS</b></h1>
+
+            <ul class="collection">
+                <li class="collection-item">Download and install <a href="" dowload>TVOZ Android App</a> (IOS app coming soon).</li>
+                <li class="collection-item">Ensure you are within TVOZ network coverage.</li>
+                <li class="collection-item">Open the TVOZ App.</li>
+                <li class="collection-item">Subscribe and enjoy live programs and movies.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="dwnLoadApp">
+        <a href="">Download TVOZ App</a>        
+    </div>
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/TVOZ.js"></script>
+</body>
+</html>
